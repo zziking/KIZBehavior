@@ -1,7 +1,7 @@
 KIZBehavior
 ==================
 
-KIZBehavior是充分利用Interface Builder来实现某些功能的工具集，旨在通过低耦合、无侵入、组件化、少代码甚至无代码化的形式来实现一些功能。
+KIZBehavior是基于组合设计模式，并且充分利用Interface Builder来实现某些功能的代码集，旨在通过低耦合、低侵入、组件化、少代码甚至无代码化的形式来实现一些功能。
 
 KIZBehavior遵循组合模式，代码遵循功能单一原则并且可以使我们的类简化，可以通过组合多个behavior来定制较为复杂的效果，并且在Interface Builder中提供丰富的参数设置，无需编码也可以通过参数来调整效果。
 
@@ -60,4 +60,4 @@ UIScrollView头部图片拉伸效果
 组合效果
 ####How to use
 需要设置UIScrollView的delegate为KIZMultipleProxyBehavior，并且将需要组合的behavior添加到MultipleProxyBehavior中即可。
-![Parallax + NavigationBar](http://7xjsf4.com1.z0.glb.clouddn.com/git_KIZBehavior_parallax_navbar.gif)
+![Parallax + NavigationBar](http://7xjsf4.com1.z0.glb.clouddn.com/git_KIZBehavior_parallax_nav.gif)

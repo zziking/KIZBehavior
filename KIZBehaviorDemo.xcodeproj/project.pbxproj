@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44F9B0D41BE45242009A0914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D31BE45242009A0914 /* main.m */; };
+		44F9B0D71BE45242009A0914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D61BE45242009A0914 /* AppDelegate.m */; };
+		44F9B0DA1BE45242009A0914 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D91BE45242009A0914 /* ViewController.m */; };
+		44F9B0DD1BE45242009A0914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9B0DB1BE45242009A0914 /* Main.storyboard */; };
+		44F9B0DF1BE45242009A0914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F9B0DE1BE45242009A0914 /* Assets.xcassets */; };
+		44F9B0E21BE45242009A0914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9B0E01BE45242009A0914 /* LaunchScreen.storyboard */; };
+		44F9B0ED1BE45242009A0914 /* KIZBehaviorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0EC1BE45242009A0914 /* KIZBehaviorDemoTests.m */; };
+		44F9B0F81BE45242009A0914 /* KIZBehaviorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0F71BE45242009A0914 /* KIZBehaviorDemoUITests.m */; };
+		44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1071BE452C7009A0914 /* KIZBehavior.m */; settings = {ASSET_TAGS = (); }; };
+		44F9B1131BE452C7009A0914 /* KIZMultipleProxyBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */; settings = {ASSET_TAGS = (); }; };
+		44F9B1141BE452C7009A0914 /* KIZNavBarGradientBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10C1BE452C7009A0914 /* KIZNavBarGradientBehavior.m */; settings = {ASSET_TAGS = (); }; };
+		44F9B1151BE452C7009A0914 /* UINavigationBar+KIZExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10E1BE452C7009A0914 /* UINavigationBar+KIZExtention.m */; settings = {ASSET_TAGS = (); }; };
+		44F9B1161BE452C7009A0914 /* KIZParallaxHeaderBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1111BE452C7009A0914 /* KIZParallaxHeaderBehavior.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44F9B0E91BE45242009A0914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F9B0C71BE45242009A0914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F9B0CE1BE45242009A0914;
+			remoteInfo = KIZBehaviorDemo;
+		};
+		44F9B0F41BE45242009A0914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F9B0C71BE45242009A0914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F9B0CE1BE45242009A0914;
+			remoteInfo = KIZBehaviorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44F9B0CF1BE45242009A0914 /* KIZBehaviorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZBehaviorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F9B0D31BE45242009A0914 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44F9B0D51BE45242009A0914 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44F9B0D61BE45242009A0914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44F9B0D81BE45242009A0914 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44F9B0D91BE45242009A0914 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44F9B0DC1BE45242009A0914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44F9B0DE1BE45242009A0914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F9B0E11BE45242009A0914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44F9B0E31BE45242009A0914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F9B0E81BE45242009A0914 /* KIZBehaviorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIZBehaviorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F9B0EC1BE45242009A0914 /* KIZBehaviorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIZBehaviorDemoTests.m; sourceTree = "<group>"; };
+		44F9B0EE1BE45242009A0914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F9B0F31BE45242009A0914 /* KIZBehaviorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIZBehaviorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F9B0F71BE45242009A0914 /* KIZBehaviorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIZBehaviorDemoUITests.m; sourceTree = "<group>"; };
+		44F9B0F91BE45242009A0914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F9B1061BE452C7009A0914 /* KIZBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZBehavior.h; sourceTree = "<group>"; };
+		44F9B1071BE452C7009A0914 /* KIZBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZBehavior.m; sourceTree = "<group>"; };
+		44F9B1081BE452C7009A0914 /* KIZMultipleProxyBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZMultipleProxyBehavior.h; sourceTree = "<group>"; };
+		44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZMultipleProxyBehavior.m; sourceTree = "<group>"; };
+		44F9B10B1BE452C7009A0914 /* KIZNavBarGradientBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZNavBarGradientBehavior.h; sourceTree = "<group>"; };
+		44F9B10C1BE452C7009A0914 /* KIZNavBarGradientBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZNavBarGradientBehavior.m; sourceTree = "<group>"; };
+		44F9B10D1BE452C7009A0914 /* UINavigationBar+KIZExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+KIZExtention.h"; sourceTree = "<group>"; };
+		44F9B10E1BE452C7009A0914 /* UINavigationBar+KIZExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+KIZExtention.m"; sourceTree = "<group>"; };
+		44F9B1101BE452C7009A0914 /* KIZParallaxHeaderBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZParallaxHeaderBehavior.h; sourceTree = "<group>"; };
+		44F9B1111BE452C7009A0914 /* KIZParallaxHeaderBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZParallaxHeaderBehavior.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F9B0CC1BE45242009A0914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0E51BE45242009A0914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0F01BE45242009A0914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F9B0C61BE45242009A0914 = {
+			isa = PBXGroup;
+			children = (
+				44F9B0D11BE45242009A0914 /* KIZBehaviorDemo */,
+				44F9B0EB1BE45242009A0914 /* KIZBehaviorDemoTests */,
+				44F9B0F61BE45242009A0914 /* KIZBehaviorDemoUITests */,
+				44F9B0D01BE45242009A0914 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44F9B0D01BE45242009A0914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B0CF1BE45242009A0914 /* KIZBehaviorDemo.app */,
+				44F9B0E81BE45242009A0914 /* KIZBehaviorDemoTests.xctest */,
+				44F9B0F31BE45242009A0914 /* KIZBehaviorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F9B0D11BE45242009A0914 /* KIZBehaviorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B1051BE452C7009A0914 /* Classes */,
+				44F9B0D51BE45242009A0914 /* AppDelegate.h */,
+				44F9B0D61BE45242009A0914 /* AppDelegate.m */,
+				44F9B0D81BE45242009A0914 /* ViewController.h */,
+				44F9B0D91BE45242009A0914 /* ViewController.m */,
+				44F9B0DB1BE45242009A0914 /* Main.storyboard */,
+				44F9B0DE1BE45242009A0914 /* Assets.xcassets */,
+				44F9B0E01BE45242009A0914 /* LaunchScreen.storyboard */,
+				44F9B0E31BE45242009A0914 /* Info.plist */,
+				44F9B0D21BE45242009A0914 /* Supporting Files */,
+			);
+			path = KIZBehaviorDemo;
+			sourceTree = "<group>";
+		};
+		44F9B0D21BE45242009A0914 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B0D31BE45242009A0914 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44F9B0EB1BE45242009A0914 /* KIZBehaviorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B0EC1BE45242009A0914 /* KIZBehaviorDemoTests.m */,
+				44F9B0EE1BE45242009A0914 /* Info.plist */,
+			);
+			path = KIZBehaviorDemoTests;
+			sourceTree = "<group>";
+		};
+		44F9B0F61BE45242009A0914 /* KIZBehaviorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B0F71BE45242009A0914 /* KIZBehaviorDemoUITests.m */,
+				44F9B0F91BE45242009A0914 /* Info.plist */,
+			);
+			path = KIZBehaviorDemoUITests;
+			sourceTree = "<group>";
+		};
+		44F9B1051BE452C7009A0914 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B1061BE452C7009A0914 /* KIZBehavior.h */,
+				44F9B1071BE452C7009A0914 /* KIZBehavior.m */,
+				44F9B1081BE452C7009A0914 /* KIZMultipleProxyBehavior.h */,
+				44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */,
+				44F9B10A1BE452C7009A0914 /* NavigationBar */,
+				44F9B10F1BE452C7009A0914 /* ParallaxHeader */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		44F9B10A1BE452C7009A0914 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B10B1BE452C7009A0914 /* KIZNavBarGradientBehavior.h */,
+				44F9B10C1BE452C7009A0914 /* KIZNavBarGradientBehavior.m */,
+				44F9B10D1BE452C7009A0914 /* UINavigationBar+KIZExtention.h */,
+				44F9B10E1BE452C7009A0914 /* UINavigationBar+KIZExtention.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		44F9B10F1BE452C7009A0914 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				44F9B1101BE452C7009A0914 /* KIZParallaxHeaderBehavior.h */,
+				44F9B1111BE452C7009A0914 /* KIZParallaxHeaderBehavior.m */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F9B0CE1BE45242009A0914 /* KIZBehaviorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F9B0FC1BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemo" */;
+			buildPhases = (
+				44F9B0CB1BE45242009A0914 /* Sources */,
+				44F9B0CC1BE45242009A0914 /* Frameworks */,
+				44F9B0CD1BE45242009A0914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIZBehaviorDemo;
+			productName = KIZBehaviorDemo;
+			productReference = 44F9B0CF1BE45242009A0914 /* KIZBehaviorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44F9B0E71BE45242009A0914 /* KIZBehaviorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F9B0FF1BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoTests" */;
+			buildPhases = (
+				44F9B0E41BE45242009A0914 /* Sources */,
+				44F9B0E51BE45242009A0914 /* Frameworks */,
+				44F9B0E61BE45242009A0914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F9B0EA1BE45242009A0914 /* PBXTargetDependency */,
+			);
+			name = KIZBehaviorDemoTests;
+			productName = KIZBehaviorDemoTests;
+			productReference = 44F9B0E81BE45242009A0914 /* KIZBehaviorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44F9B0F21BE45242009A0914 /* KIZBehaviorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F9B1021BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoUITests" */;
+			buildPhases = (
+				44F9B0EF1BE45242009A0914 /* Sources */,
+				44F9B0F01BE45242009A0914 /* Frameworks */,
+				44F9B0F11BE45242009A0914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F9B0F51BE45242009A0914 /* PBXTargetDependency */,
+			);
+			name = KIZBehaviorDemoUITests;
+			productName = KIZBehaviorDemoUITests;
+			productReference = 44F9B0F31BE45242009A0914 /* KIZBehaviorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F9B0C71BE45242009A0914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = kingizz;
+				TargetAttributes = {
+					44F9B0CE1BE45242009A0914 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					44F9B0E71BE45242009A0914 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 44F9B0CE1BE45242009A0914;
+					};
+					44F9B0F21BE45242009A0914 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 44F9B0CE1BE45242009A0914;
+					};
+				};
+			};
+			buildConfigurationList = 44F9B0CA1BE45242009A0914 /* Build configuration list for PBXProject "KIZBehaviorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F9B0C61BE45242009A0914;
+			productRefGroup = 44F9B0D01BE45242009A0914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F9B0CE1BE45242009A0914 /* KIZBehaviorDemo */,
+				44F9B0E71BE45242009A0914 /* KIZBehaviorDemoTests */,
+				44F9B0F21BE45242009A0914 /* KIZBehaviorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F9B0CD1BE45242009A0914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F9B0E21BE45242009A0914 /* LaunchScreen.storyboard in Resources */,
+				44F9B0DF1BE45242009A0914 /* Assets.xcassets in Resources */,
+				44F9B0DD1BE45242009A0914 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0E61BE45242009A0914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0F11BE45242009A0914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F9B0CB1BE45242009A0914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F9B1141BE452C7009A0914 /* KIZNavBarGradientBehavior.m in Sources */,
+				44F9B1151BE452C7009A0914 /* UINavigationBar+KIZExtention.m in Sources */,
+				44F9B1161BE452C7009A0914 /* KIZParallaxHeaderBehavior.m in Sources */,
+				44F9B0DA1BE45242009A0914 /* ViewController.m in Sources */,
+				44F9B1131BE452C7009A0914 /* KIZMultipleProxyBehavior.m in Sources */,
+				44F9B0D71BE45242009A0914 /* AppDelegate.m in Sources */,
+				44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */,
+				44F9B0D41BE45242009A0914 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0E41BE45242009A0914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F9B0ED1BE45242009A0914 /* KIZBehaviorDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9B0EF1BE45242009A0914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F9B0F81BE45242009A0914 /* KIZBehaviorDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F9B0EA1BE45242009A0914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F9B0CE1BE45242009A0914 /* KIZBehaviorDemo */;
+			targetProxy = 44F9B0E91BE45242009A0914 /* PBXContainerItemProxy */;
+		};
+		44F9B0F51BE45242009A0914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F9B0CE1BE45242009A0914 /* KIZBehaviorDemo */;
+			targetProxy = 44F9B0F41BE45242009A0914 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44F9B0DB1BE45242009A0914 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F9B0DC1BE45242009A0914 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44F9B0E01BE45242009A0914 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F9B0E11BE45242009A0914 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44F9B0FA1BE45242009A0914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44F9B0FB1BE45242009A0914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F9B0FD1BE45242009A0914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIZBehaviorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44F9B0FE1BE45242009A0914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIZBehaviorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44F9B1001BE45242009A0914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KIZBehaviorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIZBehaviorDemo.app/KIZBehaviorDemo";
+			};
+			name = Debug;
+		};
+		44F9B1011BE45242009A0914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KIZBehaviorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIZBehaviorDemo.app/KIZBehaviorDemo";
+			};
+			name = Release;
+		};
+		44F9B1031BE45242009A0914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KIZBehaviorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KIZBehaviorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44F9B1041BE45242009A0914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KIZBehaviorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZBehaviorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KIZBehaviorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F9B0CA1BE45242009A0914 /* Build configuration list for PBXProject "KIZBehaviorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F9B0FA1BE45242009A0914 /* Debug */,
+				44F9B0FB1BE45242009A0914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F9B0FC1BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F9B0FD1BE45242009A0914 /* Debug */,
+				44F9B0FE1BE45242009A0914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44F9B0FF1BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F9B1001BE45242009A0914 /* Debug */,
+				44F9B1011BE45242009A0914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44F9B1021BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F9B1031BE45242009A0914 /* Debug */,
+				44F9B1041BE45242009A0914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F9B0C71BE45242009A0914 /* Project object */;
+}

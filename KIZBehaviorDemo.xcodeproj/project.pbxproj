@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44E05D921BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E05D911BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m */; };
 		44F9B0D41BE45242009A0914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D31BE45242009A0914 /* main.m */; };
 		44F9B0D71BE45242009A0914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D61BE45242009A0914 /* AppDelegate.m */; };
 		44F9B0DA1BE45242009A0914 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D91BE45242009A0914 /* ViewController.m */; };
@@ -15,11 +16,11 @@
 		44F9B0E21BE45242009A0914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9B0E01BE45242009A0914 /* LaunchScreen.storyboard */; };
 		44F9B0ED1BE45242009A0914 /* KIZBehaviorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0EC1BE45242009A0914 /* KIZBehaviorDemoTests.m */; };
 		44F9B0F81BE45242009A0914 /* KIZBehaviorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0F71BE45242009A0914 /* KIZBehaviorDemoUITests.m */; };
-		44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1071BE452C7009A0914 /* KIZBehavior.m */; settings = {ASSET_TAGS = (); }; };
-		44F9B1131BE452C7009A0914 /* KIZMultipleProxyBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */; settings = {ASSET_TAGS = (); }; };
-		44F9B1141BE452C7009A0914 /* KIZNavBarGradientBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10C1BE452C7009A0914 /* KIZNavBarGradientBehavior.m */; settings = {ASSET_TAGS = (); }; };
-		44F9B1151BE452C7009A0914 /* UINavigationBar+KIZExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10E1BE452C7009A0914 /* UINavigationBar+KIZExtention.m */; settings = {ASSET_TAGS = (); }; };
-		44F9B1161BE452C7009A0914 /* KIZParallaxHeaderBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1111BE452C7009A0914 /* KIZParallaxHeaderBehavior.m */; settings = {ASSET_TAGS = (); }; };
+		44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1071BE452C7009A0914 /* KIZBehavior.m */; };
+		44F9B1131BE452C7009A0914 /* KIZMultipleProxyBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */; };
+		44F9B1141BE452C7009A0914 /* KIZNavBarGradientBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10C1BE452C7009A0914 /* KIZNavBarGradientBehavior.m */; };
+		44F9B1151BE452C7009A0914 /* UINavigationBar+KIZExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B10E1BE452C7009A0914 /* UINavigationBar+KIZExtention.m */; };
+		44F9B1161BE452C7009A0914 /* KIZParallaxHeaderBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B1111BE452C7009A0914 /* KIZParallaxHeaderBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44E05D901BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCharacterLimitBehavior.h; sourceTree = "<group>"; };
+		44E05D911BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZCharacterLimitBehavior.m; sourceTree = "<group>"; };
 		44F9B0CF1BE45242009A0914 /* KIZBehaviorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZBehaviorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F9B0D31BE45242009A0914 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44F9B0D51BE45242009A0914 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44E05D8F1BEE4AF800E9E8D0 /* CharacterLimit */ = {
+			isa = PBXGroup;
+			children = (
+				44E05D901BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.h */,
+				44E05D911BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m */,
+			);
+			path = CharacterLimit;
+			sourceTree = "<group>";
+		};
 		44F9B0C61BE45242009A0914 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 				44F9B1071BE452C7009A0914 /* KIZBehavior.m */,
 				44F9B1081BE452C7009A0914 /* KIZMultipleProxyBehavior.h */,
 				44F9B1091BE452C7009A0914 /* KIZMultipleProxyBehavior.m */,
+				44E05D8F1BEE4AF800E9E8D0 /* CharacterLimit */,
 				44F9B10A1BE452C7009A0914 /* NavigationBar */,
 				44F9B10F1BE452C7009A0914 /* ParallaxHeader */,
 			);
@@ -325,6 +338,7 @@
 				44F9B0DA1BE45242009A0914 /* ViewController.m in Sources */,
 				44F9B1131BE452C7009A0914 /* KIZMultipleProxyBehavior.m in Sources */,
 				44F9B0D71BE45242009A0914 /* AppDelegate.m in Sources */,
+				44E05D921BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m in Sources */,
 				44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */,
 				44F9B0D41BE45242009A0914 /* main.m in Sources */,
 			);
@@ -552,6 +566,7 @@
 				44F9B0FE1BE45242009A0914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F9B0FF1BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +575,7 @@
 				44F9B1011BE45242009A0914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F9B1021BE45242009A0914 /* Build configuration list for PBXNativeTarget "KIZBehaviorDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +584,7 @@
 				44F9B1041BE45242009A0914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

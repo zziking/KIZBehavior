@@ -9,47 +9,27 @@
 #import "UINavigationBar+KIZExtention.h"
 #import <objc/runtime.h>
 
-static char originBackgroundImage;
-static char originShadowImage;
-static char backgroundView;
+@interface UINavigationBar ()
+
+@property (nonatomic, assign) BOOL     kizOriginIsTranslucent;
+@property (nonatomic, strong) UIImage *kizOriginBackgroundImage;
+@property (nonatomic, strong) UIImage *kizOriginShadowImage;
+@property (nonatomic, strong) UIView  *kizBackgroundView;
+
+@end
 
 @implementation UINavigationBar (KIZExtention)
 
-#pragma mark- getters & setters
-- (UIImage *)kiz_originBackgroundImage{
-    return objc_getAssociatedObject(self, &originBackgroundImage);
-}
-- (void)kiz_setOriginBackgroundImage:(UIImage *)image{
-    objc_setAssociatedObject(self, &originBackgroundImage, image, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (UIImage *)kiz_originShadowImage{
-    return objc_getAssociatedObject(self, &originShadowImage);
-}
-
-- (void)kiz_setOriginShadowImage:(UIImage *)image{
-    objc_setAssociatedObject(self, &originShadowImage, image, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (UIView *)kiz_backgroundView{
-    return objc_getAssociatedObject(self, &backgroundView);
-}
-
-- (void)kiz_setBackgroundView:(UIView *)view{
-    objc_setAssociatedObject(self, &backgroundView, view, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-#pragma mark -
 
 - (void)kiz_setBackgroundAlpha:(CGFloat)alpha{
     [self kiz_setBackgroundColor:[self.barTintColor colorWithAlphaComponent:alpha]];
 }
 
 - (void)kiz_setBackgroundColor:(UIColor *)color{
-    if (![self kiz_backgroundView]) {
-        [self kiz_setOriginBackgroundImage:[self backgroundImageForBarMetrics:UIBarMetricsDefault]];
-        [self kiz_setOriginShadowImage:self.shadowImage];
+    if (!self.kizBackgroundView) {
+        self.kizOriginBackgroundImage = [self backgroundImageForBarMetrics:UIBarMetricsDefault];
+        self.kizOriginShadowImage     = self.shadowImage;
+        self.kizOriginIsTranslucent   = self.translucent;
         
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         [self setShadowImage:nil];
@@ -57,22 +37,55 @@ static char backgroundView;
         UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, self.bounds.size.height + 20)];
         bgView.userInteractionEnabled = NO;
         [self insertSubview:bgView atIndex:0];
-        [self kiz_setBackgroundView:bgView];
+        
+        self.kizBackgroundView = bgView;
+        self.translucent       = YES;
+
     }
-    self.kiz_backgroundView.backgroundColor = color;
+    self.kizBackgroundView.backgroundColor = color;
 
 }
 
 - (void)kiz_reset{
-    [self setBackgroundImage:self.kiz_originBackgroundImage forBarMetrics:UIBarMetricsDefault];
-    [self setShadowImage:self.kiz_originShadowImage];
+    [self setBackgroundImage:self.kizOriginBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    [self setShadowImage:self.kizOriginShadowImage];
+    [self setTranslucent:self.kizOriginIsTranslucent];
     
-    [self kiz_setOriginBackgroundImage:nil];
-    [self kiz_setOriginShadowImage:nil];
-    
-    [self.kiz_backgroundView removeFromSuperview];
-    [self kiz_setBackgroundView:nil];
+    [self.kizBackgroundView removeFromSuperview];
+    self.kizOriginBackgroundImage = nil;
+    self.kizOriginShadowImage     = nil;
+    self.kizBackgroundView        = nil;
 }
 
+#pragma mark- getters & setters
+
+- (UIImage *)kizOriginBackgroundImage{
+    return objc_getAssociatedObject(self, @selector(kizOriginBackgroundImage));
+}
+- (void)setKizOriginBackgroundImage:(UIImage *)kizOriginBackgroundImage{
+    objc_setAssociatedObject(self, @selector(kizOriginBackgroundImage), kizOriginBackgroundImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIImage *)kizOriginShadowImage{
+    return objc_getAssociatedObject(self, @selector(kizOriginShadowImage));
+}
+- (void)setKizOriginShadowImage:(UIImage *)kizOriginShadowImage{
+    objc_setAssociatedObject(self, @selector(kizOriginShadowImage), kizOriginShadowImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIView *)kizBackgroundView{
+    return objc_getAssociatedObject(self, @selector(kizBackgroundView));
+}
+- (void)setKizBackgroundView:(UIView *)kizBackgroundView{
+    objc_setAssociatedObject(self, @selector(kizBackgroundView), kizBackgroundView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+
+- (BOOL)kizOriginIsTranslucent{
+    return [objc_getAssociatedObject(self, @selector(kizOriginIsTranslucent)) boolValue];
+}
+- (void)setKizOriginIsTranslucent:(BOOL)kizOriginIsTranslucent{
+    objc_setAssociatedObject(self, @selector(kizOriginIsTranslucent), @(kizOriginIsTranslucent), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 @end

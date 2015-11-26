@@ -74,25 +74,36 @@
     _didScrolled = YES;
     
     //动态变化tintColor
-    if (offsetY > 0 && offsetY < self.criticalOffset * 2) {
+    if (offsetY >= 0) {
         
-        UIColor *color = nil;
-        CGFloat alpha  = 1;
+        UIColor *tintColor  = nil;
+        UIColor *titleColor = nil;
+        CGFloat alpha       = 1;
         
         CGFloat offset = self.criticalOffset / 2.0;
         if (offsetY < offset) {
-            alpha = 1 - offsetY / offset;
-            color = [UIColor colorWithWhite:1 alpha:alpha];
+            alpha      = 1 - offsetY / offset;
+            tintColor  = [UIColor colorWithWhite:1 alpha:alpha];
+            titleColor = tintColor;
+            
         }else{
-            alpha = offsetY / offset - 1;
-            color = [_navBarOriginalTintColor colorWithAlphaComponent:alpha];
+            alpha      = offsetY / offset - 1;
+            tintColor  = [_navBarOriginalTintColor colorWithAlphaComponent:alpha];
+            titleColor = tintColor;
+            
+            UIColor *originTitleColor = _navBarOriginTitleAttribute[NSForegroundColorAttributeName];
+            if (originTitleColor) {
+                titleColor = [originTitleColor colorWithAlphaComponent:alpha];
+            }
+            
         }
         
-        navBar.tintColor = color;
-        _navBarCurTitleAttribute[NSForegroundColorAttributeName] = color;
+        navBar.tintColor = tintColor;
+         _navBarCurrentTintColor = tintColor;
+        
+        _navBarCurTitleAttribute[NSForegroundColorAttributeName] = titleColor;
         navBar.titleTextAttributes = _navBarCurTitleAttribute;
         
-        _navBarCurrentTintColor = color;
     }
     
 }

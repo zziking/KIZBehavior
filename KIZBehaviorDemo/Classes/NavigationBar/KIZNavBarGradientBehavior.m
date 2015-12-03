@@ -45,7 +45,8 @@
     
     //动态变化背景色
     _navBarCurBgAlpha = offsetY > 0 ? scrollView.contentOffset.y / self.criticalOffset : 0;
-    [navBar kiz_setBackgroundAlpha:_navBarCurBgAlpha];
+//    [navBar kiz_setBackgroundAlpha:_navBarCurBgAlpha];
+    [navBar kiz_setBackgroundColor:[self.barBackColor colorWithAlphaComponent:_navBarCurBgAlpha]];
     
     //导航栏不透明时，显示原本的shadowImage
     if (_navBarCurBgAlpha > 1) {
@@ -185,8 +186,9 @@
     
     navBar.titleTextAttributes = _navBarCurTitleAttribute;
 
-    [navBar kiz_setBackgroundAlpha:_navBarCurBgAlpha];
-
+//    [navBar kiz_setBackgroundAlpha:_navBarCurBgAlpha];
+    [navBar kiz_setBackgroundColor:[self.barBackColor colorWithAlphaComponent:_navBarCurBgAlpha]];
+    
     navBar.shadowImage = _curShadowImage;
 }
 
@@ -215,5 +217,12 @@
 #pragma mark-
 - (UINavigationBar *)navigationBar{
     return ((UIViewController *)self.owner).navigationController.navigationBar;
+}
+
+- (UIColor *)barBackColor{
+    if (!_barBackColor) {
+        _barBackColor = [self navigationBar].barTintColor;
+    }
+    return _barBackColor;
 }
 @end

@@ -1,6 +1,6 @@
 //
 //  KIZParallaxTableBehavior.h
-//  KIZParallaTableDemo
+//  KIZParallaTableDemo https://github.com/zziking/KIZBehavior
 //
 //  Created by kingizz on 15/8/18.
 //  Copyright (c) 2015年 kingizz. All rights reserved.

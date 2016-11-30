@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188C0E411DEE8B000011B9B1 /* DemoForCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C0E401DEE8B000011B9B1 /* DemoForCode.m */; };
 		44E05D921BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E05D911BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m */; };
 		44F9B0D41BE45242009A0914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D31BE45242009A0914 /* main.m */; };
 		44F9B0D71BE45242009A0914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F9B0D61BE45242009A0914 /* AppDelegate.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188C0E3F1DEE8B000011B9B1 /* DemoForCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoForCode.h; sourceTree = "<group>"; };
+		188C0E401DEE8B000011B9B1 /* DemoForCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoForCode.m; sourceTree = "<group>"; };
 		44E05D901BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCharacterLimitBehavior.h; sourceTree = "<group>"; };
 		44E05D911BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZCharacterLimitBehavior.m; sourceTree = "<group>"; };
 		44F9B0CF1BE45242009A0914 /* KIZBehaviorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZBehaviorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +136,8 @@
 				44F9B0D61BE45242009A0914 /* AppDelegate.m */,
 				44F9B0D81BE45242009A0914 /* ViewController.h */,
 				44F9B0D91BE45242009A0914 /* ViewController.m */,
+				188C0E3F1DEE8B000011B9B1 /* DemoForCode.h */,
+				188C0E401DEE8B000011B9B1 /* DemoForCode.m */,
 				44F9B0DB1BE45242009A0914 /* Main.storyboard */,
 				44F9B0DE1BE45242009A0914 /* Assets.xcassets */,
 				44F9B0E01BE45242009A0914 /* LaunchScreen.storyboard */,
@@ -341,6 +346,7 @@
 				44E05D921BEE4B2500E9E8D0 /* KIZCharacterLimitBehavior.m in Sources */,
 				44F9B1121BE452C7009A0914 /* KIZBehavior.m in Sources */,
 				44F9B0D41BE45242009A0914 /* main.m in Sources */,
+				188C0E411DEE8B000011B9B1 /* DemoForCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
